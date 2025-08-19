@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Note App</title>
+    <link rel="stylesheet" href="note.css">
 </head>
 <body>
+    
     <header>
        <h1>quick note</h1>
-       <div>
-           <button class="Add Note btn">+Add Note</button>
+       <div class="header-buttons">
+           <button class="Add Note btn" onclick="openNoteDialog()">+Add Note</button>
            <button id="themetoglebtn" class="theme-togle-btn">✨</button>
         </div>
     </header>
@@ -19,11 +21,29 @@
         <dialog id="note-dialog"> 
            <div class="dialog-content">
               <div class="dialog Header">
-                <h2 class="dialog-title" id="dialogtitle">Add new note</h2>
+                <h2 class="dialog-title" id="dialogTitle">Add new note</h2>
                 <button class="Close btn" onclick="closeNoteDialog()">x</button>
 
                </div>
-            
+            <form action="container" id="Note form">
+              <div class="form1">
+                <label for="Note Title" class="Form1">Title</label>
+                <input type="text" id="Note Title" class="form1" placeholder="Note Title" required>
+
+              </div>
+
+
+
+
+
+
+
+
+
+            </form>
+
+
+
            </div>
 
          </dialog>
